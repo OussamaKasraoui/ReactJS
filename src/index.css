@@ -1,0 +1,262 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  }
+  
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+}
+
+div{
+  margin-bottom: 10px;
+}
+  
+  
+#root,
+.App {
+  background-color: #f7f6e9;
+  background-image: url('./img/background.png');
+  width: 100%;
+  height: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/* typo */
+.united{
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left:0px;
+}
+
+.label{
+  text-align: center;
+  padding: 5px;
+  color: #001648;
+  font-size: 18px;
+}
+
+.value{
+  text-align: center;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.conContainer{
+  position: relative;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Alert box*/
+#Alert{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: inherit;
+  min-height: 80px;
+  border-radius: 0px;
+  text-align: center;
+  line-height: 70px;
+  font-family: 'Raleway', sans-serif;
+}
+
+#primary{
+  color:            #004085;
+  background-color: #cce5ff;
+  border-color:     #b8daff;
+  height: 80px;
+}
+
+#success{
+  color:            #155724;
+  background-color: #d4edda;
+  border-color:     #c3e6cb;
+  min-height: 80px;
+}
+
+#info{
+  color:            #0c5460;
+  background-color: #d1ecf1;
+  border-color:     #bee5eb;
+  min-height: 80px;
+}
+
+#warning{
+  color:            #856404;
+  background-color: #fff3cd;
+  border-color:     #ffeeba;
+  min-height: 80px;
+}
+
+#danger{
+  color:            #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  min-height: 80px;
+}
+
+#secondary{
+  color:            #383d41;
+  background-color: #e2e3e5;
+  border-color:     #d6d8db;
+  min-height: 80px;
+}
+
+/* radio button inline style */
+input[type="radio"] {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  vertical-align: middle;
+  border: 2px solid #f56;
+  border-radius: 50%;
+  padding: 2px;
+  margin:0 5px;
+}
+input[type="radio"]:checked + label span {
+  width: 10px;
+  height: 10px;
+  background: #f56;
+  background-clip: content-box;
+}
+
+/* Content */
+.content-body{
+  position: static;
+  background-color: #fff;
+  align-content: center;
+  padding: 0px;
+  padding-top: 100px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.Content-zone{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  padding: 50px;
+}
+
+.switch{
+  width : 50%;
+}
+
+.fink{
+  border: red 2px solid;
+}
+
+.addButton{
+  background-color: #DC3; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  position: fixed;
+  top: 5;
+  right: 5;
+  z-index: 1;
+}
+
+/*footer*/
+.footer{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+#footer{
+    background-color: #fff; 
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    padding: 25px;
+    margin-top: 20px;
+}
+ul, li{
+    list-style-type: none;
+}
+.list{
+    margin-top: 15px;
+}
+
+
+/* Navbar */
+#NavBar{
+  height: 100%;
+}
+
+#navigation-bar {
+  position: relative;
+  
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+ 
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+ 
+#navigation-bar-ul {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+#navigation-bar li {
+  float: right;
+  margin-right: 10px;
+}
+
+#navigation-bar li:hover a::before {
+  right: 0;
+  left: 0;
+}
+
+#navigation-bar a {
+  color: #848484;
+  font-size: 20px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 10px;
+  padding: 20px 0;
+  transition: all 0.3s ease;
+}
+
+#navigation-bar a:hover {
+  color: #d9b10b /*#e74c3c*/;
+}
+
+#navigation-bar a:active {
+  color: #d9b10b /*#e74c3c*/;
+}
+
+#navigation-bar a::before {
+  content: "";
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  bottom: 0;
+  height: 2px;
+  background-color: #d9b10b;
+}
+#navigation-bar a:hover::before {
+  right: 0;
+  left: 0;
+}
+
+
+/* Map height*/
+.leaflet-container{
+  height: inherit;
+}
+
