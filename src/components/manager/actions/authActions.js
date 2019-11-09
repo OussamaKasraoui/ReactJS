@@ -7,7 +7,7 @@ import {GET_ERRORS,
 
 // Register User
 export const registerUser = (userData, successful) => dispatch => {
-  axios.post("/api/register", userData)
+  axios.post("http://shops-express.herokuapp.com/api/register", userData)
        .then(res => {
         let status = res.data.status;
         let response = res.data.response;
