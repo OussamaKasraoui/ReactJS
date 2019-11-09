@@ -7,7 +7,7 @@ import {GET_ERRORS,
 
 // Register User
 export const registerUser = (userData, successful) => dispatch => {
-  axios.post("http://shops-express.herokuapp.com/api/register", userData)
+  axios.post("shops-express.herokuapp.com/api/register", userData)
        .then(res => {
         let status = res.data.status;
         let response = res.data.response;
@@ -103,7 +103,7 @@ export const registerUser = (userData, successful) => dispatch => {
 // Login - get user token
 export const loginUser = userData => dispatch => {
 
-  axios.post("/api/login", userData)
+  axios.post("shops-express.herokuapp.com/api/login", userData)
        .then(res => {
 
           let status = res.data.status;
@@ -150,7 +150,7 @@ export const logoutUser = () => dispatch => {
 
 // Reset user's password
 export const resetUser = (userData,success) => dispatch => {
-    axios.post("/api/reset", userData)
+    axios.post("shops-express.herokuapp.com/api/reset", userData)
        .then(res =>{
           console.log('res = '+ JSON.stringify(res));
 
